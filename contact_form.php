@@ -95,7 +95,7 @@ if (isset($_POST['submit'])) {
         unset($_SESSION['status']);
     }
     ?>
-        <h2>Add Details Here</h2>
+        <h2>Add User</h2>
         <div class="container mt-4">
             <form method="post" enctype="multipart/form-data">
                 <div class="form-group row mb-4">

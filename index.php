@@ -5,10 +5,10 @@
         exit;
     }
 
-    if(!$_SESSION['ID']){
-        header('Location: dashboard.php');
-        exit;
-    }
+    // if(!$_SESSION['ID']){
+    //     header('Location: dashboard.php');
+    //     exit;
+    // }
   
     // if(!isset($_SESSION['ID']) &&( $_SESSION['usertype'] != 'user') )
     // {
@@ -57,16 +57,16 @@
     </nav>
         
         <div id="mySidenav" class="sidenav">
-            <a href="insert.php">Add New Employee</a>
-            <a href="index.php">Employee List</a>
-            <a href="userdetail.php">User Profile</a>
+            <a href="insert.php">Add New Users</a>
+            <a href="index.php">User List</a>
+            <a href="userdetail.php">Admin/User Profile</a>
         </div>
         <div class="wrapper">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
                         <table class="table table-bordered table-striped text-center">
-                            <h2 class="pull-left">Employees Details</h2>
+                            <h2 class="pull-left">User Details</h2>
                             <?php 
 	
                                 if(isset($_SESSION['status']))

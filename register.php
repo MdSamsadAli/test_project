@@ -3,6 +3,63 @@
 
 include 'connection.php';
 
+
+// $array3 = array();
+
+// $array1= array('appl','ball');
+// $array2= array('ghiraula','bhini');
+// $arrayz= array('asfsaf','bhini');
+
+
+// $all_arrays = [$array1, $array2,$arrayz];
+// $merged = [];
+// for ($i = 0; $i < 3; $i++) {
+//     $arr = $all_arrays[$i];
+//     $x = count($arr);
+//     for ($j=0; $j < $x; $j++) { 
+//        $merged[$arr[$j]] = 1;
+//     }
+// }
+
+// $array3 = [];
+// $x = count($merged);
+// for ($i=0; $i < $x; $i++) { 
+//   $array3[] = key($merged);
+//   next($merged);
+// }
+// foreach($array3 as $val){
+// 	echo $val.'<br>';
+// }
+// var_dump($array3);
+
+
+// $array1= array('1','2');
+// $array2= array('4','5');
+
+// $i =0;
+
+// $array3 = array();
+
+// foreach($array1 as $ky=>$val){
+	
+// 	array_push($array3,$val);
+
+// }
+
+// foreach($array2 as $ky=>$val){
+	
+// 	array_push($array3,$val);
+
+// }
+
+// foreach($array3 as $ky=>$val){
+	
+//  var_dump($val).'<br>';
+// }
+
+
+
+
 if (isset($_POST['submit'])) {
 	// code...
 

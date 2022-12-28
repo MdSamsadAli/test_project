@@ -57,7 +57,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <table class="table table-bordered table-striped text-center">
-                        <h2 class="pull-left">Employees Details</h2>
+                        <h2 class="pull-left">User Details</h2>
                         <thead>
                             <tr>
                                 <th>SNo.</th>
@@ -71,7 +71,7 @@
                             <?php
                             include 'connection.php';
                             $id = 1;
-                            $sql = "SELECT * from contact_list ORDER BY id desc";
+                            $sql = "SELECT * from contact_list";
                             $result = mysqli_query($conn, $sql);
                             if($result){
                             while($row = mysqli_fetch_assoc($result)){
@@ -82,7 +82,8 @@
                                 <td><?php echo $row['username']; ?></td>
                                 <td><?php echo $row['email']; ?></td>
                                 <td><?php echo $row['address']; ?></td>
-                                <td><?php echo $row['file']; ?></td>
+                                <td>
+                                    <?php echo $row['file']; ?></td>
                                 
                             </tr>
                             <?php $id++; ?>
